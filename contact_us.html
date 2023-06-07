@@ -8,12 +8,44 @@
 -->
 <html>
 	<head>
-		<title>LTMS Robotics | Coming soon</title>
+		<title>LTMS Robotics | Contact Us</title>
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.container {
+			  max-width: 400px;
+			  margin: 0 auto;
+			}
+		
+			input[type="text"],
+			input[type="email"],
+			textarea {
+			  width: 100%;
+			  padding: 10px;
+			  margin-bottom: 15px;
+			  border: 1px solid #ccc;
+			  box-sizing: border-box;
+			  font-family: Arial, sans-serif;
+			}
+		
+			textarea {
+			  height: 150px;
+			}
+		
+			input[type="submit"] {
+			  background-color: #4CAF50;
+			  color: white;
+			  border: none;
+			  cursor: pointer;
+			}
+		
+			input[type="submit"]:hover {
+			  background-color: #45a049;
+			}
+		  </style>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
@@ -51,8 +83,20 @@
 				<div id="main" class="wrapper style1">
 					<div class="container">
 						<header class="major">
-							<h2>Coming soon</h2>
-						</header>
+							<h2>Contact Us</h2>
+						</header>	
+						<form action="mailto:tuli.davenport@gmail.com" enctype="text/plain">
+							<label for="name">Your Name:</label>
+							<input type="text" id="name" name="name" required>
+					
+							<label for="email">Your Email:</label>
+							<input type="email" id="email" name="email" required>
+					
+							<label for="message">Message:</label>
+							<textarea id="message" name="message" required></textarea>
+					
+							<input type="submit" value="Submit">
+						</form>
 					</div>
 				</div>
 			<!-- Footer -->
